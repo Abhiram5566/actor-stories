@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actor Stories</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 40px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .actor {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px 40px;
+            background: #222;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .actor:hover {
+            background: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>✨ Choose Your Actor ✨</h1>
+
+    <div class="container">
+        <div class="actor" onclick="go('bailu.html')">Bai Lu</div>
+        <div class="actor" onclick="go('dilraba.html')">Dilraba</div>
+        <div class="actor" onclick="go('zhaolusi.html')">Zhao Lusi</div>
+        <div class="actor" onclick="go('wangyibo.html')">Wang Yibo</div>
+        <div class="actor" onclick="go('xiaozhan.html')">Xiao Zhan</div>
+    </div>
+
+    <script>
+        function go(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
